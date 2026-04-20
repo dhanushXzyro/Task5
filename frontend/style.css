@@ -1,0 +1,87 @@
+/* 1. css - padding&margin
+2.flexbox
+3.grid 
+4.reset startegy*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F3E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color:#E3DBBB ;
+    width:500px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#heading{
+    margin-bottom: 18px;
+}
+
+#task_input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+#add_btn{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+#task_list{
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+
+}
+
+.comp_btn{
+    width: 20px;
+    height: 20px;
+   border-radius: 50%;
+   border-color: green;
+   border-style: solid;
+}
+.task_text{
+
+}
+.delete_btn{
+    padding: 5px;
+    background-color: red;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.marked{
+    background-color: green;
+    color:white;
+}
+
+.task_marked{
+    text-decoration: line-through;
+    color: grey;
+}
